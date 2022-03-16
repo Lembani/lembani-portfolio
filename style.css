@@ -1,11 +1,10 @@
-
 body {
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    
+  padding: 0;
+  font-family: 'Inter', sans-serif; 
 }
+
 .header {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .nav {
   display: flex;
@@ -15,90 +14,89 @@ body {
 }
 
 .brand {
-    width: 90px;
-    color: #28352F;
-    font-size: 20px;
-    text-align: center;
-    line-height: 28px;
-    height: 28px;
-    font-weight: 600;
-    font-style: normal;
+  width: 90px;
+  color: #28352F;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  height: 28px;
+  font-weight: 600;
+  font-style: normal;
 }
 
 a {
-    text-decoration: none;
-    color: #28352F;
+  text-decoration: none;
+  color: #28352F;
 }
 
 .headline {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-image: url(/header-illsutration-mobile.svg);
-    background-repeat: no-repeat;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(/header-illsutration-mobile.svg);
+  background-repeat: no-repeat;
 }
 
 .headline-content {
-    padding-left: 24px;
-    padding-top: 64px;
-    width: 327px;
-    font-size: 40px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-    margin-bottom: 5px;
+  padding-left: 24px;
+  padding-top: 64px;
+  width: 327px;
+  font-size: 40px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 5px;
 }
 
-
 .intro-1 {
-    color: #172B4D;
+  color: #172B4D;
 }
 
 .intro-2 {
-    color: #36B37E;
+  color: #36B37E;
 }
 
 .description {
-    width: 327px;
-    height: 164px;
-    padding-left: 24px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    font-style: normal;
-    color: #172B4D;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    line-height: 28px;
+  width: 327px;
+  height: 164px;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  color: #172B4D;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 28px;
 }
 
 .social-icons {
-    width: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    margin-top: 70px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .down-icon {
-    margin: 0 auto;
-    border: 1px solid #DFE1E6;
-    text-align: center;
-    padding: 8px 8px;
-    border-radius: 50%;
-    margin-top: 70px;
+  margin: 0 auto;
+  border: 1px solid #DFE1E6;
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 50%;
+  margin-top: 70px;
 }
 
 .social-icon:hover {
-    color: #36B37E;
+  color: #36B37E;
 }
+
 .brand>a:hover {
-    color: #36B37E;
+  color: #36B37E;
 }
 
 .down-icon:hover {
-    color: #36B37E;
+  color: #36B37E;
 }
