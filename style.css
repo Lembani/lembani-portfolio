@@ -25,6 +25,11 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+    color: #28352F;
+}
+
 .headline {
     display: flex;
     flex-direction: column;
@@ -85,4 +90,15 @@ body {
     padding: 8px 8px;
     border-radius: 50%;
     margin-top: 70px;
+}
+
+.social-icon:hover {
+    color: #36B37E;
+}
+.brand>a:hover {
+    color: #36B37E;
+}
+
+.down-icon:hover {
+    color: #36B37E;
 }
