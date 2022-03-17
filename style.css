@@ -25,6 +25,10 @@ body {
   font-style: normal;
 }
 
+.menu {
+  line-height: 28px;
+}
+
 a {
   text-decoration: none;
   color: #28352f;
@@ -35,6 +39,7 @@ a {
   flex-direction: column;
   width: 100%;
   background-image: url('header-illsutration-mobile.svg');
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -46,18 +51,23 @@ a {
   font-style: normal;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  padding-top: 15px;
+  margin-bottom: 0;
 }
 
 .intro-1 {
   color: #172b4d;
   font-size: 38px;
   font-family: 'Inter', sans-serif;
+  margin-bottom: 0;
 }
 
 .intro-2 {
   color: #36b37e;
   font-size: 32px;
   font-family: 'Inter', sans-serif;
+  margin-top: 10px;
 }
 
 .description {
@@ -70,7 +80,7 @@ a {
   font-style: normal;
   color: #172b4d;
   font-family: 'Inter', sans-serif;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 30px;
   line-height: 28px;
 }
