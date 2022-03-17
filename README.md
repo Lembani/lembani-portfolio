@@ -14,10 +14,10 @@
 
 [Click here to see the Live Demo](https://github.com/Lembani/lembani-portfolio)
 
-
 ## Getting Started
 
 If you want a copy of this project go to the [GitHub repository](https://github.com/Lembani/lembani-portfolio) and download it from the link below.
+
 - [Lembani Sakala Portfolio](git@github.com/Lembani/lembani-portfolio.git)
 
 
@@ -68,4 +68,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
