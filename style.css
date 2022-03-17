@@ -21,7 +21,7 @@ body {
   text-align: center;
   line-height: 28px;
   height: 28px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -34,39 +34,42 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url(/header-illsutration-mobile.svg);
+  background-image: url('header-illsutration-mobile.svg');
   background-repeat: no-repeat;
 }
 
 .headline-content {
-  padding-left: 24px;
-  padding-top: 64px;
+  padding-left: 20px;
   width: 327px;
   font-size: 40px;
   text-align: center;
   font-style: normal;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
-  margin-bottom: 5px;
 }
 
 .intro-1 {
   color: #172b4d;
+  font-size: 38px;
+  font-family: 'Inter', sans-serif;
 }
 
 .intro-2 {
   color: #36b37e;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
 }
 
 .description {
   width: 327px;
   height: 164px;
   padding-left: 24px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
   font-style: normal;
   color: #172b4d;
+  font-family: 'Inter', sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 28px;
@@ -76,9 +79,18 @@ a {
   width: 180px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-top: 70px;
+  padding: 5px 5px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  list-style: none;
+}
+
+.fa-brands {
+  color: #505f79;
 }
 
 .down-icon {
@@ -90,11 +102,15 @@ a {
   margin-top: 70px;
 }
 
-.social-icon:hover {
+.social-icon > a:hover {
   color: #36b37e;
 }
 
-.brand > a:hover {
+.brand:hover {
+  color: #36b37e;
+}
+
+.menu:hover {
   color: #36b37e;
 }
 
