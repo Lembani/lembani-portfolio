@@ -1,0 +1,129 @@
+body {
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.brand {
+  width: 90px;
+  color: #28352f;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  height: 28px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu {
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #28352f;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url('header-illsutration-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headline-content {
+  padding-left: 20px;
+  width: 327px;
+  font-size: 40px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.intro-1 {
+  color: #172b4d;
+  font-size: 38px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0;
+}
+
+.intro-2 {
+  color: #36b37e;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 10px;
+}
+
+.description {
+  width: 327px;
+  height: 164px;
+  padding-left: 24px;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+.social-icons {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5px 5px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  list-style: none;
+}
+
+.fa-brands {
+  color: #505f79;
+}
+
+.down-icon {
+  margin: 0 auto;
+  border: 1px solid #dfe1e6;
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 50%;
+  margin-top: 70px;
+}
+
+.social-icon > a:hover {
+  color: #36b37e;
+}
+
+.brand:hover {
+  color: #36b37e;
+}
+
+.menu:hover {
+  color: #36b37e;
+}
+
+.down-icon:hover {
+  color: #36b37e;
+}
