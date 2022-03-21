@@ -199,15 +199,14 @@ a {
 }
 
 .categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   background-color: #fff;
   padding-left: 0;
 }
 
 .cat-item {
+  float: left;
+  margin: 10px;
   list-style: none;
   font-size: 12px;
   font-family: 'Inter', sans-serif;
