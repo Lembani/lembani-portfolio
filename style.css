@@ -206,7 +206,7 @@ a {
 
 .cat-item {
   float: left;
-  margin: 10px;
+  margin-left: 8px;
   list-style: none;
   font-size: 12px;
   font-family: 'Inter', sans-serif;
