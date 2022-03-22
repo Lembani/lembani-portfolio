@@ -211,7 +211,12 @@
         <h2 class="contact-description">I'm always interested in hearing about new projects, so if you'd like to chat
             please get in touch.</h2>
         <div class="form-container">
-
+         <form class="form-field" action="#" method="post">
+            <input type="text" class="full-name" name="fullname" id="full_names" maxlength="30" placeholder="Full Name" required>
+            <input type="email" class="email-address" name="email" id="email_address" placeholder="Email address" required>
+            <textarea name="comment" class="message" id="comments" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
+            <button class="submit-btn" type="submit">Get in touch</button>
+         </form>
         </div>
     </section>
 
