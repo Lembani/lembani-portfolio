@@ -42,7 +42,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url('header-illsutration-mobile.svg');
+  background-image: url('/images/header-illsutration-mobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -240,7 +240,7 @@ a {
   width: 100%;
   height: inherit;
   text-align: center;
-  background-image: url('about-img-1.svg'), url('about-img-2.svg');
+  background-image: url('/images/about-img-1.svg'), url('/images/about-img-2.svg');
   background-repeat: no-repeat;
   background-position: top right, bottom left;
   padding-left: 6px;
