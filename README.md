@@ -57,6 +57,15 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+### Contributors
+
+Special thanks to the following contributors:
+
+👤 **Mandela Tumukunde**
+- GitHub: [@mandelatuks](https://github.com/mandelatuks)
+- Twitter: [@MandelaTm1](https://twitter.com/MandelaTm1)
+
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
