@@ -365,3 +365,20 @@ a {
   color: #fff;
   background-color: #505f79;
 }
+
+.contact-section {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+  color: #172b4d;
+  text-align: center;
+  padding: 5px 5px;
+}
