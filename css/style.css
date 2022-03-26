@@ -767,3 +767,13 @@ a {
   }
 }
 
+.work-card {
+  cursor: pointer;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  transition-property: box-shadow;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+}
+.work-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
