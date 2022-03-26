@@ -506,6 +506,10 @@ a {
   display: none;
 }
 
+.intro-desk {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -698,4 +702,68 @@ a {
   .email-cta {
     display: none;
   }
+
+  .intro-1 {
+    display: none;
+  }
+
+  .intro-desk,
+  .intro-desk span {
+    font-size: 38px;
+    display: inline-block;
+    animation: introOne 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+
+  @keyframes introOne {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 }
+
+.skills-card:hover,
+.img-container:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.intro-1 span {
+  font-size: 38px;
+  display: inline-block;
+  animation: introOne 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes introOne {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.intro-2 {
+  animation: 2s anim-intro-up ease-out infinite;
+}
+@keyframes anim-intro-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
