@@ -60,6 +60,31 @@ a {
   font-size: 38px;
   font-family: "Inter", sans-serif;
   margin-bottom: 0;
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
+}
+
+@keyframes writeTextAnimation {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinker {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #36b37f;
+  }
 }
 
 .intro-2 {
@@ -716,23 +741,34 @@ a {
     display: none;
   }
 
-  .intro-desk,
-  .intro-desk span {
-    font-size: 38px;
+  .intro-desk {
     display: inline-block;
-    animation: introOne 1s infinite;
-    animation-delay: calc(0.1s * var(--i));
+    font-size: 38px;
+    margin: 0 auto;
+    overflow: hidden;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
   }
 
-  @keyframes introOne {
-    0%,
-    40%,
-    100% {
-      transform: translateY(0);
+  @keyframes writeTextAnimation {
+    from {
+      width: 0;
     }
 
-    20% {
-      transform: translateY(-20px);
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blinker {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: #36b37f;
     }
   }
 }
@@ -740,25 +776,6 @@ a {
 .skills-card:hover,
 .img-container:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-}
-
-.intro-1 span {
-  font-size: 38px;
-  display: inline-block;
-  animation: introOne 1s infinite;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes introOne {
-  0%,
-  40%,
-  100% {
-    transform: translateY(0);
-  }
-
-  20% {
-    transform: translateY(-20px);
-  }
 }
 
 @keyframes anim-intro-up {
