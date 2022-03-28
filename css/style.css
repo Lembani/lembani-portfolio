@@ -60,6 +60,31 @@ a {
   font-size: 38px;
   font-family: "Inter", sans-serif;
   margin-bottom: 0;
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
+}
+
+@keyframes writeTextAnimation {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinker {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #36b37f;
+  }
 }
 
 .intro-2 {
@@ -67,6 +92,7 @@ a {
   font-size: 32px;
   font-family: "Inter", sans-serif;
   margin-top: 10px;
+  animation: 2s anim-intro-up ease-out infinite;
 }
 
 .description {
@@ -179,6 +205,11 @@ a {
   margin: 0 auto;
   margin-top: 10px;
   border: 1px solid #d0d9d4;
+  cursor: pointer;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  transition-property: box-shadow;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
 }
 
 .work-card-img {
@@ -286,6 +317,7 @@ a {
   font-weight: 500;
   font-family: "Inter", sans-serif;
   line-height: 24px;
+  animation: wiggle 2s linear infinite;
 }
 
 .skills-section {
@@ -387,6 +419,7 @@ a {
   text-align: center;
   padding: 5px 5px;
   margin-bottom: 0;
+  animation: moveToLeft 2s ease-in;
 }
 
 .form-container {
@@ -503,6 +536,10 @@ a {
 }
 
 .footer-line {
+  display: none;
+}
+
+.intro-desk {
   display: none;
 }
 
@@ -659,6 +696,7 @@ a {
     color: #172b4d;
     text-align: left;
     padding-top: 80px;
+    animation: moveToLeft 2s ease-in;
   }
 
   .form-container {
@@ -697,5 +735,112 @@ a {
 
   .email-cta {
     display: none;
+  }
+
+  .intro-1 {
+    display: none;
+  }
+
+  .intro-desk {
+    display: inline-block;
+    font-size: 38px;
+    margin: 0 auto;
+    overflow: hidden;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
+  }
+
+  @keyframes writeTextAnimation {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blinker {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: #36b37f;
+    }
+  }
+}
+
+.skills-card:hover,
+.img-container:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes anim-intro-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.work-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  25% {
+    transform: translateX(0%);
   }
 }
