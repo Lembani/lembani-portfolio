@@ -749,6 +749,7 @@ a {
 .intro-2 {
   animation: 2s anim-intro-up ease-out infinite;
 }
+
 @keyframes anim-intro-up {
   0% {
     opacity: 0;
