@@ -12,7 +12,7 @@
 
 ## Live Demo Link
 
-[Click here to see the Live Demo](https://github.com/Lembani/lembani-portfolio)
+[Click here to see the Live Demo](https://lembani.github.io/lembani-portfolio/)
 
 ## Getting Started
 
