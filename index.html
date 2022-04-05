@@ -19,17 +19,25 @@
         <nav class="nav">
             <ul class="mobile-nav">
                 <li class="mobile-nav-item"><a class="brand" href="#">Welcome</a></li>
-                <li class="mobile-nav-item"><a class="menu fa fa-bars fa-xl"></a></li>
+                <li class="mobile-nav-item menu">
+                    <i class="menu-icon fa fa-bars fa-xl"></i>
+                    <i class="close-menu-icon fa-solid fa-xmark fa-xl"></i>
+                </li>
             </ul>
+            <ul class="mobile-nav-items">
+                <li class="mobile-nav-item"><a href="#work" class="nav-link">Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="mobile-nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul> 
         </nav>
     </header>
     <section class="headline">
         <header class="header">
             <nav class="nav-desk">
                 <ul class="desktop-nav">
-                    <li class="desktop-nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="desktop-nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="desktop-nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="desktop-nav-item"><a href="#work" class="nav-link">Portfolio</a></li>
+                    <li class="desktop-nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="desktop-nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -58,7 +66,7 @@
         </button>
     </section>
 
-    <section class="work-section">
+    <section class="work-section" id="work">
         <div class="heading">
             <h2 class="work-section-header">My Recent <br> Works</h2>
             <h2 class="work-section-header-2">My Recent Works</h2>
@@ -169,7 +177,7 @@
         </div>
     </section>
 
-    <section class="about-me-section">
+    <section class="about-me-section" id="about">
         <h2 class="about-me-section-header">About me</h2>
         <p class="about-me-description"> I can help you build a product , feature or website Look through some of my
             work and experience! If you like what you see and have a project you need coded,
@@ -222,7 +230,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <h2 class="contact-description">I'm always interested in hearing about new projects, so if you'd like to chat
             please get in touch.</h2>
         <div class="form-container">
@@ -257,7 +265,8 @@
             </div>
         </footer>
     </div>
-
+    
+<script src="./js/script.js"></script>
 </body>
 
 </html>

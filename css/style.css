@@ -522,8 +522,49 @@ a {
   padding: 5px 15px;
 }
 
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 15px;
+  background-color: #fff;
+  transform: translateX(-99%);
+  transition: transform 0.3s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.displayMenu {
+  transform: translateY(0);
+}
+
+.mobile-nav-items > .mobile-nav-item {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: left;
+  font-style: normal;
+  color: #3a4a42;
+  font-family: "Inter", sans-serif;
+  line-height: 40px;
+  margin-top: 40px;
+}
+
+ /* {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+
+.fa-xmark {
+  color: #67798e;
+}
+
 .mobile-nav-item,
-.desktop-nav-item {
+.desktop-nav-item,
+.close {
   list-style: none;
 }
 
