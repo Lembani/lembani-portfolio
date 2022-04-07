@@ -147,3 +147,25 @@ projects.forEach((proj, index) => {
  `;
   workCardContainer.innerHTML += card;
 });
+
+const modal = `
+<div class="project-modal-container">
+<div class="project-modal">
+  <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+  <img class="project-modal-img" src="./images/modal-image.svg" alt="Medical Illustration Sets" />
+  <div class="modal-content-container">
+    <div class="modal-header-container">
+      <h2 class="modal-header">Keeping track of hundreds of
+        components</h2>
+      <ul class="modal-links">
+        <li class="modal-link-item"></li>
+      </ul>
+    </div>
+    <ul class="languages">
+      <li class="language"></li>
+    </ul>
+    <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+  </div>
+</div>
+</div>
+`;
