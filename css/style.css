@@ -88,6 +88,8 @@ a {
 }
 
 .intro-2 {
+  position: relative;
+  z-index: -1;
   color: #36b37e;
   font-size: 32px;
   font-family: "Inter", sans-serif;
@@ -304,6 +306,8 @@ a {
 }
 
 .resume-btn {
+  position: relative;
+  z-index: -1;
   background-color: #36b37f;
   width: 160px;
   height: 48px;
@@ -331,16 +335,17 @@ a {
 }
 
 .img-container {
+  z-index: auto;
   width: 90px;
   height: 90px;
+  margin: 0 auto;
   border-radius: 50%;
   background-color: #fff;
-  position: relative;
-  margin: 0 auto;
   margin-top: 40px;
 }
 
 .round-img {
+  z-index: 1;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -523,8 +528,44 @@ a {
 }
 
 .mobile-nav-item,
-.desktop-nav-item {
+.desktop-nav-item,
+.close {
   list-style: none;
+}
+
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 99;
+  padding: 5px 15px;
+  color: black;
+  background-color: #fff;
+  height: 100vh;
+  width: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.displayMenu {
+  transform: translateY(0);
+}
+
+.mobile-nav-items > .mobile-nav-item {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: left;
+  font-style: normal;
+  color: #3a4a42;
+  font-family: "Inter", sans-serif;
+  line-height: 40px;
+  margin-top: 40px;
+}
+
+.fa-xmark {
+  color: #67798e;
 }
 
 .desktop-nav {
