@@ -175,6 +175,19 @@ const projects = [
   },
 ];
 
+const modalView = document.getElementById('popupModal');
+const modalViewMobile = document.getElementById('popupModalMobile');
+
+const closePopup = () => {
+  const closeModalIcon = document.querySelector('.close-modal-icon');
+  closeModalIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!modalView.classList.contains('hide-modal')) {
+      modalView.classList.add('hide-modal');
+    }
+  });
+};
+
 const workCardContainer = document.querySelector('.work-card-container');
 projects.forEach((proj, index) => {
   let catItems = '';
@@ -184,14 +197,14 @@ projects.forEach((proj, index) => {
   });
 
   const card = `
-  <div class="work-card">
-    <img class="work-card-img" src="${proj.projectImg}" alt="Multi-Post Stories Gain plus Glory" />
-    <div class="work-card-content">
-      <h3 class="card-title">${proj.projectTitle}</h3>
-      <ul class="categories">${catItems}</ul>
-    <button class="see-proj-btn" type="button" id="${index}" name="see-project" aria-label="See project button">See Project</button>
+    <div class="work-card">
+      <img class="work-card-img" src="${proj.projectImg}" alt="Multi-Post Stories Gain plus Glory" />
+      <div class="work-card-content">
+        <h3 class="card-title">${proj.projectTitle}</h3>
+        <ul class="categories">${catItems}</ul>
+      <button class="see-proj-btn" type="button" id="${index}" name="see-project" aria-label="See project button">See Project</button>
+    </div>
   </div>
- </div>
  `;
   workCardContainer.innerHTML += card;
 });
@@ -199,37 +212,48 @@ projects.forEach((proj, index) => {
 const showModal = () => {
   const cardButtons = document.querySelectorAll('.see-proj-btn');
   cardButtons.forEach((cardButton) => {
-    
-  });
-  const modalView = document.getElementsById('popupModal');
+    cardButton.addEventListener('click', () => {
+      const btnId = cardButton.getAttribute('id');
+      const cardDetails = projects[btnId];
+      if (window.innerWidth >= 768) {
+        let technologies = '';
+        cardDetails.projectDetails.technologies.map((technology) => {
+          technologies += `<li class="langauge">${technology}</li>`;
+          return null;
+        });
+        const modal = `
+              <div class="project-modal">
+                <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+                <img class="project-modal-img" src="${cardDetails.projectDetails.featuredImage}" alt="Medical Illustration Sets" />
+                <div class="modal-content-container">
+                  <div class="modal-header-container">
+                    <h2 class="modal-header">${cardDetails.projectDetails.name}</h2>
+                    <ul class="modal-links">
+                      <li class="modal-link-item"></li>
+                    </ul>
+                  </div>
+                  <ul class="languages">
+                    ${technologies}
+                  </ul>
+                  <p class="description">${cardDetails.projectDetails.description}</p>
+                </div>
+              </div>
+            `;
+        if (modalView.classList.contains('hide-modal')) {
+          modalView.classList.remove('hide-modal');
+          modalView.innerHTML = modal;
 
-  projects.forEach((modalDetail, index) => {
-    const technologies = '';
-
-    modalDetail.projectDetails.technologies.map((technology) => {
-      technologies += `<li class="langauge">${technology}</li>`;
-      return null;
+          console.log('card details: ', cardDetails);
+          console.log('open modal content: ', modalView);
+        }
+        closePopup();
+      } else {
+        // show mobile
+        console.log('Show mobile popup');
+      }
     });
-
-    const modal = `
-<div class="project-modal-container">
-<div class="project-modal">
-  <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
-  <img class="project-modal-img" src="${modalDetail.projectDetails.featuredImage}" alt="Medical Illustration Sets" />
-  <div class="modal-content-container">
-    <div class="modal-header-container">
-      <h2 class="modal-header">${modalDetail.projectDetails.name}</h2>
-      <ul class="modal-links">
-        <li class="modal-link-item"></li>
-      </ul>
-    </div>
-    <ul class="languages">
-      ${technologies}
-    </ul>
-    <p class="description">${modalDetail.projectDetails.description}</p>
-  </div>
-</div>
-</div>
-`;
   });
+  console.trace('show modal method');
 };
+console.log('show modal call', showModal);
+showModal();
