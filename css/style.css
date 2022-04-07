@@ -812,6 +812,82 @@ a {
       border-color: #36b37f;
     }
   }
+
+  .project-modal-container {
+    border: 1px solid #333;
+    height: 100vh;
+  }
+
+  .project-modal {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 8px 8px;
+    height: 95vh;
+    padding: 15px 0;
+  }
+
+  .close-modal-icon {
+    width: 30px;
+    height: 20px;
+    background: #ebecf0;
+    border-radius: 8px 8px;
+    margin-top: 10px;
+    margin-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    
+
+    align-self: flex-end;
+
+  }
+
+  .close-modal-icon:hover {
+    cursor: pointer;
+  }
+
+  .project-modal-img {
+    width: inherit;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #f00;
+  }
+
+  .modal-content-container {
+
+  }
+
+  .modal-header-container {
+
+  }
+
+  .modal-header {
+
+  }
+
+  .modal-links {
+
+  }
+
+  .modal-link-item {
+
+  }
+
+  .languages {
+
+  }
+
+  .language {
+
+  }
+
+  .description {
+
+  }
 }
 
 .skills-card:hover,
