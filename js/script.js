@@ -4,7 +4,7 @@ const brand = document.querySelector('.brand');
 const mobileNavItems = document.querySelector('.mobile-nav-items');
 const menuIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-menu-icon');
-const porfolio = document.getElementById('portfolio-link');
+const portfolio = document.getElementById('portfolio-link');
 const about = document.getElementById('about-link');
 const contact = document.getElementById('contact-link');
 
@@ -36,7 +36,7 @@ function closeMenu() {
   mobileNavItems.style.display = 'none';
 }
 
-porfolio.addEventListener('click', closeMenu);
+portfolio.addEventListener('click', closeMenu);
 about.addEventListener('click', closeMenu);
 contact.addEventListener('click', closeMenu);
 
@@ -59,8 +59,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
   {
@@ -81,8 +93,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
   {
@@ -103,8 +127,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
   {
@@ -125,8 +161,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
   {
@@ -147,8 +195,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
   {
@@ -169,8 +229,20 @@ const projects = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
+    },
+    mobileDetails: {
+      featuredImage: './images/mobile-modal-img.png',
+      name: 'Keeping track of hundreds of components',
+      technologies: [
+        'Ruby on rails',
+        'css',
+        'JavaScript',
+      ],
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
+      sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
   },
 ];
@@ -184,6 +256,16 @@ const closePopup = () => {
     e.preventDefault();
     if (!modalView.classList.contains('hide-modal')) {
       modalView.classList.add('hide-modal');
+    }
+  });
+};
+
+const closeMobilePopup = () => {
+  const closeModalIconMobile = document.querySelector('.close-modal-icon-mob');
+  closeModalIconMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!modalViewMobile.classList.contains('hide-modal')) {
+      modalViewMobile.classList.add('hide-modal');
     }
   });
 };
@@ -229,8 +311,8 @@ const showModal = () => {
                   <div class="modal-header-container">
                     <h2 class="modal-header">${cardDetails.projectDetails.name}</h2>
                     <ul class="modal-links">
-                      <li class="modal-link-item"><a href="">See Live<a/></li>
-                      <li class="modal-link-item"><a href="">See Source<a/></li>
+                      <li class="modal-link-item"><a href="${cardDetails.projectDetails.liveVersionLink}">See Live <img class="live-icon" src="./images/live-icon.svg" alt="live icon" /><a/></li>
+                      <li class="modal-link-item"><a href="${cardDetails.projectDetails.sourceLink}">See Source <img class="source-icon" src="./images/source-icon.svg" alt="source icon" /><a/></li>
                     </ul>
                   </div>
                   <ul class="languages">
@@ -246,12 +328,36 @@ const showModal = () => {
         }
         closePopup();
       } else {
-        // show mobile
-        console.log('Show mobile popup');
+        let technologies = '';
+        cardDetails.mobileDetails.technologies.map((technology) => {
+          technologies += `<li class="language-mob">${technology}</li>`;
+          return null;
+        });
+        const modal = `
+              <div class="project-modal-mob">
+                <i class="close-modal-icon-mob fa-solid fa-xmark fa-xl"></i>
+                <img class="project-modal-img-mob" src="${cardDetails.mobileDetails.featuredImage}" alt="Medical Illustration Sets" />
+                <div class="modal-content-container-mob">
+                    <h2 class="modal-header-mob">${cardDetails.mobileDetails.name}</h2>
+                  <ul class="languages-mob">
+                    ${technologies}
+                  </ul>
+                  <p class="modal-description-mob">${cardDetails.mobileDetails.description}</p>
+                  <ul class="modal-links-mob">
+                      <li class="modal-link-item-mob"><a href="${cardDetails.mobileDetails.liveVersionLink}">See Live <img class="live-icon" src="./images/live-icon.svg" alt="live icon" /><a/></li>
+                      <li class="modal-link-item-mob"><a href="${cardDetails.mobileDetails.sourceLink}">See Source <img class="source-icon" src="./images/source-icon.svg" alt="source icon" /><a/></li>
+                    </ul>
+                </div>
+              </div>
+            `;
+        if (modalViewMobile.classList.contains('hide-modal')) {
+          modalViewMobile.classList.remove('hide-modal');
+          modalViewMobile.innerHTML = modal;
+        }
+        closeMobilePopup();
       }
     });
   });
-  console.trace('show modal method');
 };
-console.log('show modal call', showModal);
+
 showModal();
