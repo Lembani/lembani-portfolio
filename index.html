@@ -1,445 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Lembani Sakala's personal portfolio website."
-		/>
-		<title>Lembani Sakala - Portfolio</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-			integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lembani Sakala's personal portfolio website."
+    />
+    <title>Lembani Sakala | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-	<body>
-		<header class="header-mobile">
-			<nav class="nav">
-				<ul class="mobile-nav">
-					<li class="mobile-nav-item"><a class="brand" href="#">Welcome</a></li>
-					<li class="mobile-nav-item menu">
-						<i class="menu-icon fa fa-bars fa-xl"></i>
-						<i class="close-menu-icon fa-solid fa-xmark fa-xl"></i>
-					</li>
-				</ul>
-				<ul class="mobile-nav-items">
-					<li class="mobile-nav-item nav-list-item">
-						<a href="#work" id="portfolio-link" class="nav-link">Portfolio</a>
-					</li>
-					<li class="mobile-nav-item nav-list-item">
-						<a href="#about" id="about-link" class="nav-link">About</a>
-					</li>
-					<li class="mobile-nav-item nav-list-item">
-						<a href="#contact" id="contact-link" class="nav-link"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<section class="headline">
-			<header class="header">
-				<nav class="nav-desk">
-					<ul class="desktop-nav">
-						<li class="desktop-nav-item">
-							<a href="#work" class="nav-link">Portfolio</a>
-						</li>
-						<li class="desktop-nav-item">
-							<a href="#about" class="nav-link">About</a>
-						</li>
-						<li class="desktop-nav-item">
-							<a href="#contact" class="nav-link">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div class="headline-content">
-				<h1 class="intro-1">
-					Hey there. <br />
-					I'm Lembani.
-				</h1>
-				<h1 class="intro-desk">Hey there. I'm Lembani.</h1>
-				<h2 class="intro-2">I'm a software developer</h2>
-			</div>
-			<p class="description">
-				I can help you build a product , feature or website. Look through some
-				of my work and experience! If you like what you see and have a project
-				you need coded, don't hestiate to contact me.
-			</p>
-			<ul class="social-icons">
-				<li class="social-icon">
-					<a
-						class="fa-brands fa-twitter fa-xl"
-						href="https://twitter.com/lembani_"
-					></a>
-				</li>
-				<li class="social-icon">
-					<a
-						class="fa-brands fa-linkedin fa-xl"
-						href="https://www.linkedin.com/in/lembani-sakala-b58615109"
-					></a>
-				</li>
-				<li class="social-icon">
-					<a
-						class="fa-brands fa-medium fa-xl"
-						href=" https://medium.com/@lembanisakala"
-					></a>
-				</li>
-				<li class="social-icon">
-					<a
-						class="fa-brands fa-github fa-xl"
-						href="https://github.com/Lembani"
-					></a>
-				</li>
-				<li class="social-icon">
-					<a
-						class="fa-brands fa-angellist fa-xl"
-						href="https://angel.co/u/lembani-sakala"
-					></a>
-				</li>
-			</ul>
-			<button
-				type="button"
-				name="scroll-down"
-				aria-label="Scroll down"
-				class="down-icon"
-			>
-				<i class="fa-solid fa-chevron-down fa-xl"></i>
-			</button>
-		</section>
+  <body>
+    <div class="modal-view hide-modal" id="popupModal"></div>
+    <div class="modal-view-mobile hide-modal" id="popupModalMobile"></div>
+    <header class="header-mobile">
+      <nav class="nav">
+        <ul class="mobile-nav">
+          <li class="mobile-nav-item"><a class="brand" href="#">Welcome</a></li>
+          <li class="mobile-nav-item menu">
+            <i class="menu-icon fa fa-bars fa-xl"></i>
+            <i class="close-menu-icon fa-solid fa-xmark fa-xl"></i>
+          </li>
+        </ul>
+        <ul class="mobile-nav-items">
+          <li class="mobile-nav-item nav-list-item">
+            <a href="#work" id="portfolio-link" class="nav-link">Portfolio</a>
+          </li>
+          <li class="mobile-nav-item nav-list-item">
+            <a href="#about" id="about-link" class="nav-link">About</a>
+          </li>
+          <li class="mobile-nav-item nav-list-item">
+            <a href="#contact" id="contact-link" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="headline">
+      <header class="header">
+        <nav class="nav-desk">
+          <ul class="desktop-nav">
+            <li class="desktop-nav-item">
+              <a href="#work" class="nav-link">Portfolio</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="headline-content">
+        <h1 class="intro-1">
+          Hey there. <br />
+          I'm Lembani.
+        </h1>
+        <h1 class="intro-desk">Hey there. I'm Lembani.</h1>
+        <h2 class="intro-2">I'm a software developer</h2>
+      </div>
+      <p class="description">
+        I can help you build a product , feature or website. Look through some
+        of my work and experience! If you like what you see and have a project
+        you need coded, don't hestiate to contact me.
+      </p>
+      <ul class="social-icons">
+        <li class="social-icon">
+          <a
+            class="fa-brands fa-twitter fa-xl"
+            href="https://twitter.com/lembani_"
+          ></a>
+        </li>
+        <li class="social-icon">
+          <a
+            class="fa-brands fa-linkedin fa-xl"
+            href="https://www.linkedin.com/in/lembani-sakala-b58615109"
+          ></a>
+        </li>
+        <li class="social-icon">
+          <a
+            class="fa-brands fa-medium fa-xl"
+            href=" https://medium.com/@lembanisakala"
+          ></a>
+        </li>
+        <li class="social-icon">
+          <a
+            class="fa-brands fa-github fa-xl"
+            href="https://github.com/Lembani"
+          ></a>
+        </li>
+        <li class="social-icon">
+          <a
+            class="fa-brands fa-angellist fa-xl"
+            href="https://angel.co/u/lembani-sakala"
+          ></a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        name="scroll-down"
+        aria-label="Scroll down"
+        class="down-icon"
+      >
+        <i class="fa-solid fa-chevron-down fa-xl"></i>
+      </button>
+    </section>
 
-		<section class="work-section" id="work">
-			<div class="heading">
-				<h2 class="work-section-header">
-					My Recent <br />
-					Works
-				</h2>
-				<h2 class="work-section-header-2">My Recent Works</h2>
-				<hr class="underline" />
-			</div>
-			<div class="work-card-container">
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
+    <section class="work-section" id="work">
+      <div class="heading">
+        <h2 class="work-section-header">
+          My Recent <br />
+          Works
+        </h2>
+        <h2 class="work-section-header-2">My Recent Works</h2>
+        <hr class="underline" />
+      </div>
+      <div class="work-card-container"></div>
+    </section>
 
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
+    <section class="about-me-section" id="about">
+      <h2 class="about-me-section-header">About me</h2>
+      <p class="about-me-description">
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don't hestiate to contact me.
+      </p>
+      <button
+        class="resume-btn"
+        type="button"
+        name="resume-button"
+        aria-label="Get my resume button"
+      >
+        Get My Resume
+      </button>
+    </section>
 
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
+    <section class="skills-section">
+      <div class="skills-card">
+        <div class="img-container">
+          <img
+            src="./images/language-icon.svg"
+            alt="Languages icon"
+            class="round-img"
+          />
+        </div>
+        <h3 class="skills-item-title">Languages</h3>
+        <ul class="language-list">
+          <li class="language-item">JavaScript</li>
+          <li class="language-item">Ruby</li>
+          <li class="language-item">Html</li>
+          <li class="language-item">CSS</li>
+        </ul>
+      </div>
 
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
+      <div class="skills-card">
+        <div class="img-container">
+          <img
+            src="./images/frameworks-icon.svg"
+            alt="Languages icon"
+            class="round-img"
+          />
+        </div>
+        <h3 class="skills-item-title">Frameworks</h3>
+        <ul class="language-list">
+          <li class="language-item">Bootstrap</li>
+          <li class="language-item">Ruby on rails</li>
+          <li class="language-item">RSpec</li>
+          <li class="language-item">Capybara</li>
+          <li class="language-item">Selenium</li>
+        </ul>
+      </div>
 
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
+      <div class="skills-card">
+        <div class="img-container">
+          <img
+            src="./images/skills-icon.svg"
+            alt="Languages icon"
+            class="round-img"
+          />
+        </div>
+        <h3 class="skills-item-title">Skills</h3>
+        <ul class="language-list">
+          <li class="language-item">Codekit</li>
+          <li class="language-item">GitHub</li>
+          <li class="language-item">Codepen</li>
+          <li class="language-item">Gitlab</li>
+          <li class="language-item">Terminal</li>
+        </ul>
+      </div>
+    </section>
 
-				<div class="work-card">
-					<img
-						class="work-card-img"
-						src="./images/img-placeholder.png"
-						alt="Multi-Post Stories Gain plus Glory"
-					/>
-					<div class="work-card-content">
-						<h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-						<ul class="categories">
-							<li class="cat-item">Ruby on rails</li>
-							<li class="cat-item">css</li>
-							<li class="cat-item">JavaScript</li>
-							<li class="cat-item">html</li>
-						</ul>
-						<button
-							class="see-proj-btn"
-							type="button"
-							name="see-project"
-							aria-label="See project button"
-						>
-							See Project
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="contact-section" id="contact">
+      <h2 class="contact-description">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <div class="form-container">
+        <form
+          name="contactForm"
+          class="contact-form"
+          action="https://formspree.io/f/xgedzbqj"
+          method="POST"
+        >
+          <input
+            type="text"
+            class="full-name"
+            name="fullname"
+            id="full_name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="email"
+            class="email-address"
+            name="email"
+            id="email_address"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            name="message"
+            class="message"
+            id="message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <button class="submit-btn" type="submit">Get in touch</button>
+        </form>
+      </div>
+    </section>
 
-		<section class="about-me-section" id="about">
-			<h2 class="about-me-section-header">About me</h2>
-			<p class="about-me-description">
-				I can help you build a product , feature or website Look through some of
-				my work and experience! If you like what you see and have a project you
-				need coded, don't hestiate to contact me.
-			</p>
-			<button
-				class="resume-btn"
-				type="button"
-				name="resume-button"
-				aria-label="Get my resume button"
-			>
-				Get My Resume
-			</button>
-		</section>
+    <div class="footer-section">
+      <hr class="footer-line" />
+      <footer class="footer">
+        <ul class="social-icons">
+          <li class="social-icon">
+            <a
+              class="fa-brands fa-twitter fa-xl"
+              href="https://twitter.com/lembani_"
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a
+              class="fa-brands fa-linkedin fa-xl"
+              href="https://www.linkedin.com/in/lembani-sakala-b58615109"
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a
+              class="fa-brands fa-medium fa-xl"
+              href=" https://medium.com/@lembanisakala"
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a
+              class="fa-brands fa-github fa-xl"
+              href="https://github.com/Lembani"
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a
+              class="fa-brands fa-angellist fa-xl"
+              href="https://angel.co/u/lembani-sakala"
+            ></a>
+          </li>
+        </ul>
+        <div class="email-cta">
+          <a class="email-cta-link" href="mailto:lembanisakala@gmail.com"
+            >lembanisakala@gmail.com</a
+          >
+        </div>
+      </footer>
+    </div>
 
-		<section class="skills-section">
-			<div class="skills-card">
-				<div class="img-container">
-					<img
-						src="./images/language-icon.svg"
-						alt="Languages icon"
-						class="round-img"
-					/>
-				</div>
-				<h3 class="skills-item-title">Languages</h3>
-				<ul class="language-list">
-					<li class="language-item">JavaScript</li>
-					<li class="language-item">Ruby</li>
-					<li class="language-item">Html</li>
-					<li class="language-item">CSS</li>
-				</ul>
-			</div>
-
-			<div class="skills-card">
-				<div class="img-container">
-					<img
-						src="./images/frameworks-icon.svg"
-						alt="Languages icon"
-						class="round-img"
-					/>
-				</div>
-				<h3 class="skills-item-title">Frameworks</h3>
-				<ul class="language-list">
-					<li class="language-item">Bootstrap</li>
-					<li class="language-item">Ruby on rails</li>
-					<li class="language-item">RSpec</li>
-					<li class="language-item">Capybara</li>
-					<li class="language-item">Selenium</li>
-				</ul>
-			</div>
-
-			<div class="skills-card">
-				<div class="img-container">
-					<img
-						src="./images/skills-icon.svg"
-						alt="Languages icon"
-						class="round-img"
-					/>
-				</div>
-				<h3 class="skills-item-title">Skills</h3>
-				<ul class="language-list">
-					<li class="language-item">Codekit</li>
-					<li class="language-item">GitHub</li>
-					<li class="language-item">Codepen</li>
-					<li class="language-item">Gitlab</li>
-					<li class="language-item">Terminal</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="contact-section" id="contact">
-			<h2 class="contact-description">
-				I'm always interested in hearing about new projects, so if you'd like to
-				chat please get in touch.
-			</h2>
-			<div class="form-container">
-				<form
-					name="contactForm"
-					class="contact-form"
-					action="https://formspree.io/f/xgedzbqj"
-					method="POST"
-				>
-					<input
-						type="text"
-						class="full-name"
-						name="fullname"
-						id="full_name"
-						maxlength="30"
-						placeholder="Full name"
-						required
-					/>
-					<input
-						type="email"
-						class="email-address"
-						name="email"
-						id="email_address"
-						placeholder="Email address"
-						required
-					/>
-					<textarea
-						name="message"
-						class="message"
-						id="message"
-						cols="30"
-						rows="10"
-						maxlength="500"
-						placeholder="Enter text here"
-						required
-					></textarea>
-					<button class="submit-btn" type="submit">Get in touch</button>
-				</form>
-			</div>
-		</section>
-
-		<div class="footer-section">
-			<hr class="footer-line" />
-			<footer class="footer">
-				<ul class="social-icons">
-					<li class="social-icon">
-						<a
-							class="fa-brands fa-twitter fa-xl"
-							href="https://twitter.com/lembani_"
-						></a>
-					</li>
-					<li class="social-icon">
-						<a
-							class="fa-brands fa-linkedin fa-xl"
-							href="https://www.linkedin.com/in/lembani-sakala-b58615109"
-						></a>
-					</li>
-					<li class="social-icon">
-						<a
-							class="fa-brands fa-medium fa-xl"
-							href=" https://medium.com/@lembanisakala"
-						></a>
-					</li>
-					<li class="social-icon">
-						<a
-							class="fa-brands fa-github fa-xl"
-							href="https://github.com/Lembani"
-						></a>
-					</li>
-					<li class="social-icon">
-						<a
-							class="fa-brands fa-angellist fa-xl"
-							href="https://angel.co/u/lembani-sakala"
-						></a>
-					</li>
-				</ul>
-				<div class="email-cta">
-					<a class="email-cta-link" href="mailto:lembanisakala@gmail.com"
-						>lembanisakala@gmail.com</a
-					>
-				</div>
-			</footer>
-		</div>
-
-		<script src="./js/script.js"></script>
-	</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
