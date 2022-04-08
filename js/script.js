@@ -218,7 +218,7 @@ const showModal = () => {
       if (window.innerWidth >= 768) {
         let technologies = '';
         cardDetails.projectDetails.technologies.map((technology) => {
-          technologies += `<li class="langauge">${technology}</li>`;
+          technologies += `<li class="language">${technology}</li>`;
           return null;
         });
         const modal = `
@@ -229,22 +229,20 @@ const showModal = () => {
                   <div class="modal-header-container">
                     <h2 class="modal-header">${cardDetails.projectDetails.name}</h2>
                     <ul class="modal-links">
-                      <li class="modal-link-item"></li>
+                      <li class="modal-link-item"><a href="">See Live<a/></li>
+                      <li class="modal-link-item"><a href="">See Source<a/></li>
                     </ul>
                   </div>
                   <ul class="languages">
                     ${technologies}
                   </ul>
-                  <p class="description">${cardDetails.projectDetails.description}</p>
+                  <p class="modal-description">${cardDetails.projectDetails.description}</p>
                 </div>
               </div>
             `;
         if (modalView.classList.contains('hide-modal')) {
           modalView.classList.remove('hide-modal');
           modalView.innerHTML = modal;
-
-          console.log('card details: ', cardDetails);
-          console.log('open modal content: ', modalView);
         }
         closePopup();
       } else {
