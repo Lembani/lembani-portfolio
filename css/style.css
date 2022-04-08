@@ -1,8 +1,10 @@
+html,
 body {
   padding: 0;
   margin-top: 0;
-  font-family: 'Inter', sans-serif;
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header-mobile {
@@ -63,8 +65,7 @@ a {
   overflow: hidden;
   letter-spacing: 0.15em;
   white-space: nowrap;
-  animation: writeTextAnimation 3.5s steps(40, end),
-    blinker 0.75s step-end infinite;
+  animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
 }
 
 @keyframes writeTextAnimation {
@@ -140,6 +141,13 @@ a {
   margin-top: 70px;
 }
 
+.modal-link-item-mob a {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
 .social-icon > a:hover {
   color: #36b37e;
   cursor: pointer;
@@ -201,7 +209,7 @@ a {
 .work-card {
   display: flex;
   flex-direction: column;
-  width: 327px;
+  width: 329px;
   height: 500px;
   align-items: center;
   border-radius: 8px 8px;
@@ -277,8 +285,7 @@ a {
   width: 100%;
   height: inherit;
   text-align: center;
-  background-image: url('../images/about-img-1.svg'),
-    url('../images/about-img-2.svg');
+  background-image: url('../images/about-img-1.svg'), url('../images/about-img-2.svg');
   background-repeat: no-repeat;
   background-position: top right, bottom left;
   padding-left: 6px;
@@ -586,6 +593,137 @@ a {
   display: none;
 }
 
+.hide-modal {
+  display: none;
+}
+
+.modal-view-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 199;
+  width: inherit;
+  min-height: 100vh;
+  background: #c1c7d0;
+  overflow: scroll;
+}
+
+.project-modal-mob {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px;
+  height: inherit;
+  padding: 15px;
+  background: #fff;
+}
+
+.close-modal-icon-mob {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  z-index: 200;
+  color: #fff;
+  border-radius: 8px 8px;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 15px;
+  align-self: flex-end;
+}
+
+.close-modal-icon:hover {
+  cursor: pointer;
+  color: #36b37e;
+}
+
+.project-modal-img-mob {
+  height: inherit;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal-content-container-mob {
+  margin-left: 0;
+}
+
+.modal-header-mob {
+  width: inherit;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #172b4d;
+  margin-bottom: 0;
+}
+
+.modal-links-mob {
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.modal-link-item-mob {
+  background: #36b37e;
+  color: #fff;
+  border-radius: 8px 8px;
+  padding: 8px 10px;
+}
+
+.live-icon,
+.source-icon {
+  width: inherit;
+  height: inherit;
+  padding-left: 8px;
+}
+
+.languages-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  align-self: flex-start;
+  padding-left: 0;
+}
+
+.language-mob {
+  margin-right: 8px;
+  margin-left: 0;
+  height: 30px;
+  color: #344563;
+  background-color: #ebecf0;
+  border-radius: 8px 8px;
+  padding: 10px 12px 0 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.modal-description-mob {
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+  width: inherit;
+  height: inherit;
+}
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -689,8 +827,7 @@ a {
     width: 100%;
     height: inherit;
     text-align: center;
-    background-image: url('../images/illustration-about-me-desktop-bg.svg'),
-      url('../images/illustration-about-me-desktop-bg-2.svg');
+    background-image: url('../images/illustration-about-me-desktop-bg.svg'), url('../images/illustration-about-me-desktop-bg-2.svg');
     background-repeat: no-repeat;
     background-position: top right, bottom 20px left;
     padding-left: 6px;
@@ -723,9 +860,7 @@ a {
     width: 100%;
     height: inherit;
     margin-top: 60px;
-    background-image: url('../images/contact-form-illustratoin-3-desktop.svg'),
-      url('../images/illustration-2-contact-form-desktop.svg'),
-      url('../images/illustration-1-contact-form-desktop.svg');
+    background-image: url('../images/contact-form-illustratoin-3-desktop.svg'), url('../images/illustration-2-contact-form-desktop.svg'), url('../images/illustration-1-contact-form-desktop.svg');
     background-repeat: no-repeat;
     background-position: bottom right, bottom 70px left 280px, bottom left;
     padding-bottom: 180px;
@@ -794,8 +929,7 @@ a {
     overflow: hidden;
     letter-spacing: 0.15em;
     white-space: nowrap;
-    animation: writeTextAnimation 3.5s steps(40, end),
-      blinker 0.75s step-end infinite;
+    animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
   }
 
   @keyframes writeTextAnimation {
@@ -821,7 +955,7 @@ a {
 
   .hide-modal {
     display: none;
-  } 
+  }
 
   .modal-view {
     position: fixed;
@@ -830,7 +964,7 @@ a {
     bottom: 0;
     left: 0;
     z-index: 199;
-    width: 10;
+    width: inherit;
     min-height: 100vh;
     background: #c1c7d0;
     overflow: scroll;
@@ -893,7 +1027,6 @@ a {
     line-height: 40px;
     color: #172b4d;
     margin-bottom: 0;
-
   }
 
   .modal-links {
@@ -902,6 +1035,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     padding: 0;
   }
@@ -916,6 +1050,9 @@ a {
 
   .modal-link-item a {
     color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
   }
 
   .languages {
@@ -941,7 +1078,7 @@ a {
     font-size: 12px;
   }
 
-  p.modal-description {
+  .modal-description {
     color: #344563;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -983,8 +1120,7 @@ a {
 }
 
 .work-card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
 }
 
 @keyframes wiggle {
