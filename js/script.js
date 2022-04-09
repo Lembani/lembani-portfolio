@@ -347,3 +347,21 @@ showModal();
 const form = document.forms.contactForm;
 const emailInput = form.email;
 const formErrors = document.querySelector('.form-errors');
+
+const validateEmail = () => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    emailInput.focus();
+    formErrors.style.fontFamily = 'Inter';
+    formErrors.style.fontSize = '17';
+    formErrors.style.color = '#ff6163';
+    formErrors.innerText = 'Your email should be in small letters.';
+    return false;
+  }
+  form.submit();
+  return true;
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateEmail();
+});
