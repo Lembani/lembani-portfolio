@@ -724,6 +724,11 @@ a {
   height: inherit;
 }
 
+.form-errors {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -1090,6 +1095,11 @@ a {
     height: inherit;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .form-errors {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
