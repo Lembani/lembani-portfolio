@@ -292,7 +292,7 @@ projects.forEach((proj, index) => {
 });
 
 const showModal = () => {
-  const cardButtons = document.querySelectorAll('.see-proj-btn');
+  const cardButtons = document.querySelector('.see-proj-btn');
   cardButtons.forEach((cardButton) => {
     cardButton.addEventListener('click', () => {
       const btnId = cardButton.getAttribute('id');
