@@ -345,7 +345,9 @@ const showModal = () => {
 showModal();
 
 const form = document.forms.contactForm;
+const nameInput = form.fullname;
 const emailInput = form.email;
+const messageInput = form.message;
 const formErrors = document.querySelector('.form-errors');
 
 const validateEmail = () => {
@@ -365,3 +367,29 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });
+
+const formData = {
+  fullname: '',
+  email: '',
+  message: '',
+};
+
+const setLocalData = () => {
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+form.addEventListener('change', () => {
+  formData.fullname = nameInput.value;
+  formData.email = emailInput.value;
+  formData.message = messageInput.value;
+  setLocalData();
+});
+
+const getLocalData = () => {
+  const localFormData = JSON.parse(localStorage.getItem('formData'));
+  nameInput.value = localFormData.fullname;
+  emailInput.value = localFormData.email;
+  messageInput.value = localFormData.message;
+};
+
+getLocalData();
