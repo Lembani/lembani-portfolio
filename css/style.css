@@ -65,7 +65,8 @@ a {
   overflow: hidden;
   letter-spacing: 0.15em;
   white-space: nowrap;
-  animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
+  animation: writeTextAnimation 3.5s steps(40, end),
+    blinker 0.75s step-end infinite;
 }
 
 @keyframes writeTextAnimation {
@@ -285,7 +286,8 @@ a {
   width: 100%;
   height: inherit;
   text-align: center;
-  background-image: url('../images/about-img-1.svg'), url('../images/about-img-2.svg');
+  background-image: url('../images/about-img-1.svg'),
+    url('../images/about-img-2.svg');
   background-repeat: no-repeat;
   background-position: top right, bottom left;
   padding-left: 6px;
@@ -724,6 +726,11 @@ a {
   height: inherit;
 }
 
+.form-errors {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -827,7 +834,8 @@ a {
     width: 100%;
     height: inherit;
     text-align: center;
-    background-image: url('../images/illustration-about-me-desktop-bg.svg'), url('../images/illustration-about-me-desktop-bg-2.svg');
+    background-image: url('../images/illustration-about-me-desktop-bg.svg'),
+      url('../images/illustration-about-me-desktop-bg-2.svg');
     background-repeat: no-repeat;
     background-position: top right, bottom 20px left;
     padding-left: 6px;
@@ -860,7 +868,9 @@ a {
     width: 100%;
     height: inherit;
     margin-top: 60px;
-    background-image: url('../images/contact-form-illustratoin-3-desktop.svg'), url('../images/illustration-2-contact-form-desktop.svg'), url('../images/illustration-1-contact-form-desktop.svg');
+    background-image: url('../images/contact-form-illustratoin-3-desktop.svg'),
+      url('../images/illustration-2-contact-form-desktop.svg'),
+      url('../images/illustration-1-contact-form-desktop.svg');
     background-repeat: no-repeat;
     background-position: bottom right, bottom 70px left 280px, bottom left;
     padding-bottom: 180px;
@@ -929,7 +939,8 @@ a {
     overflow: hidden;
     letter-spacing: 0.15em;
     white-space: nowrap;
-    animation: writeTextAnimation 3.5s steps(40, end), blinker 0.75s step-end infinite;
+    animation: writeTextAnimation 3.5s steps(40, end),
+      blinker 0.75s step-end infinite;
   }
 
   @keyframes writeTextAnimation {
@@ -1091,6 +1102,11 @@ a {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .form-errors {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .skills-card:hover,
@@ -1120,7 +1136,8 @@ a {
 }
 
 .work-card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
 }
 
 @keyframes wiggle {

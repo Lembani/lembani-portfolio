@@ -65,12 +65,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -99,12 +96,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -133,12 +127,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -167,12 +158,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -201,12 +189,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -235,12 +220,9 @@ const projects = [
     mobileDetails: {
       featuredImage: './images/mobile-modal-img.png',
       name: 'Keeping track of hundreds of components',
-      technologies: [
-        'Ruby on rails',
-        'css',
-        'JavaScript',
-      ],
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       liveVersionLink: 'https://lembani.github.io/lembani-portfolio',
       sourceLink: 'https://github.com/Lembani/lembani-portfolio.git',
     },
@@ -361,3 +343,7 @@ const showModal = () => {
 };
 
 showModal();
+
+const form = document.forms.contactForm;
+const emailInput = form.email;
+const formErrors = document.querySelector('.form-errors');
