@@ -5,6 +5,9 @@
 
 > Lembani Sakala's personal portfolio website.
 
+<img width="1436" alt="SLembani" src="https://user-images.githubusercontent.com/30483991/167249557-6a4e608f-7a84-438a-9ab7-589349dddf08.png">
+
+
 ## Built With
 
 - HTML
